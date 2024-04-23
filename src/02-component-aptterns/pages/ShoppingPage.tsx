@@ -1,6 +1,6 @@
 import { ProductCard, ProductImage, ProductTitle, ProductButtons } from "../components";
 
-import  "../styles/custom-styles.css";
+import "../styles/custom-styles.css";
 
 const product = {
   id: '1',
@@ -29,13 +29,22 @@ export const ShoppingPage = () => {
           <ProductCard.Buttons />
         </ProductCard>
 
-        <ProductCard 
+        <ProductCard
           className="bgDark text-white"
           product={product2} >
-          <ProductImage className="custom-image"/>
+          <ProductImage className="custom-image" style={{ boxShadow: "10px 10px 10px rgba(0,0,0,0.2)" }} />
           <ProductTitle className="text-white" />
-          <ProductButtons className="custom-buttons"/>
+          <ProductButtons className="custom-buttons" />
+        </ProductCard>
 
+        <ProductCard style={{ backgroundColor: '#92505b' }}
+          product={product2} >
+          <ProductImage style={{ boxShadow: "10px 10px 10px rgba(0,0,0,0.2)" }} />
+          <ProductTitle style={{ fontWeight: "bold" }} />
+          <ProductButtons style={{
+            display: "flex",
+            justifyContent: "end"
+          }} />
         </ProductCard>
       </div>
     </div>
