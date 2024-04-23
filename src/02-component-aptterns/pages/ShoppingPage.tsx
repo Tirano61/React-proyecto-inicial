@@ -1,5 +1,7 @@
 import { ProductCard, ProductImage, ProductTitle, ProductButtons } from "../components";
 
+import  "../styles/custom-styles.css";
+
 const product = {
   id: '1',
   title: 'Coffee - Mug - card',
@@ -13,7 +15,7 @@ const product2 = {
 
 export const ShoppingPage = () => {
   return (
-    <div >
+    <div>
       <h1>Shopping Page</h1>
       <hr />
       <div style={{
@@ -27,10 +29,12 @@ export const ShoppingPage = () => {
           <ProductCard.Buttons />
         </ProductCard>
 
-        <ProductCard product={product2} >
-          <ProductImage />
-          <ProductTitle />
-          <ProductButtons />
+        <ProductCard 
+          className="bgDark text-white"
+          product={product2} >
+          <ProductImage className="custom-image"/>
+          <ProductTitle className="text-white" />
+          <ProductButtons className="custom-buttons"/>
 
         </ProductCard>
       </div>

@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate } from "react-router-dom"
 import { Routes, Route, NavLink } from "react-router-dom";
 import logo from "../logo.svg";
-import { ShoppingPage } from "../02-component-aptterns/assets/ShoppingPage";
+import { ShoppingPage } from "../02-component-aptterns/pages/ShoppingPage";
 
 
 export const Navigation = () => {
