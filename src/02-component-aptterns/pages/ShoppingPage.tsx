@@ -1,14 +1,9 @@
-import { useState } from "react";
-import { ProductCard, ProductImage, ProductTitle, ProductButtons } from "../components";
-import { Product } from "../interfaces/interfaces";
 
-import "../styles/custom-styles.css";
+import { ProductCard, ProductImage, ProductTitle, ProductButtons } from "../components";
+
 import { useShoppingCart } from "../hooks/useShoppingCart";
 import { products } from "../data/products";
-
-
-
-
+import "../styles/custom-styles.css";
 
 
 export const ShoppingPage = () => {
@@ -50,7 +45,7 @@ export const ShoppingPage = () => {
               product={product}
               className="bgDark text-white"
               style={{ width: "100px" }}
-              // onChange={ onProductCountChange }
+              onChange={ onProductCountChange }
               value={ product.count } 
             >
               <ProductImage className="custom-image" style={{ boxShadow: "10px 10px 10px rgba(0,0,0,0.2)" }} />
