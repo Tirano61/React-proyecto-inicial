@@ -1,7 +1,6 @@
 
 import { ProductCard, ProductImage, ProductTitle, ProductButtons } from "../components";
 
-import { useShoppingCart } from "../hooks/useShoppingCart";
 import { products } from "../data/products";
 import "../styles/custom-styles.css";
 
@@ -19,6 +18,10 @@ export const ShoppingPage = () => {
           key={product.id}
           className="bgDark text-white"
           product={product}
+          initialValues={{
+            count: 4,
+            maxCount: 10,
+          }}
         >
           <ProductImage className="custom-image" style={{ boxShadow: "10px 10px 10px rgba(0,0,0,0.2)" }} />
           <ProductTitle className="text-white" />
