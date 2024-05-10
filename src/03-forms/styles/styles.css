@@ -23,3 +23,7 @@ span, .error-message {
 .has-error {
     border: 1px solid red;
 }
+
+.image1 {
+    filter: drop-shadow(10px, 7px, 10px, orange);
+}
